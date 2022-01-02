@@ -6,3 +6,7 @@ It takes a 'light-frame' from non-compressed VueScan TIFF image of scanner's fra
 So the program computes properties of the bands and takes them out of a normal scanned non-compressed TIFF that you specify.
 
 The solution is not 100% full, it decreases the bands perceptibly but not entirely.
+
+TODO:
+1. try subtracting not dividing, with adjustible global multiplier.
+2. improve input parameters passing
