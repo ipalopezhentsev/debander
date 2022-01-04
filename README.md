@@ -8,5 +8,6 @@ So the program computes properties of the bands and takes them out of a normal s
 The solution is not 100% full, it decreases the bands perceptibly but not entirely.
 
 TODO:
-1. try subtracting not dividing, with adjustible global multiplier.
-2. improve input parameters passing
+1. try subtracting not dividing, with adjustable global multiplier.
+2. try sampling light-frame like 8 times and average it to decouple real persistent banding from random read noise and subtract using this filtered light-frame.
+3. improve input parameters passing
