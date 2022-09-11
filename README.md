@@ -1,13 +1,15 @@
 Some filmscanners (I have Plustek OpticFilm 7600 and Pacific Image PrimeFilm XEs) have banding problems visible on some frames (usually on overexposed blue skies).
-This utility tries to minimize this.
+This utility fixes this.
 
-It takes a 'light-frame' from non-compressed VueScan TIFF image of scanner's frame _without_ any film - if you increase contrast of such frame in Photoshop, you'll see the bands clearly.
+It takes a 'light-frame' from non-compressed VueScan 16-bit TIFF image of scanner's frame _without_ any film - if you increase contrast of such frame in Photoshop, you'll see the bands clearly.
 
 So the program computes properties of the bands and takes them out of a normal scanned non-compressed TIFF that you specify.
 
-The solution is not 100% full, it decreases the bands perceptibly but not entirely.
-
 TODO:
-1. try subtracting not dividing, with adjustable global multiplier.
-2. try sampling light-frame like 8 times and average it to decouple real persistent banding from random read noise and subtract using this filtered light-frame.
-3. improve input parameters passing
+1. improve input parameters passing
+2. add detection of horizontal/vertical frames?
+3. warn of not-16 bit inputs?
+4. make exe?
+5. make github official builds?
+6. add picture to this readme pre/post
+7. write article?
